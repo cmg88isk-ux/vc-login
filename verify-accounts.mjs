@@ -24,8 +24,8 @@
 //     discovery; state persisted to vc-healthy.json / vc-blocked.json
 //   - 4-9 s between accounts, 3-5 s between password candidates, exponential
 //     backoff on transient failures
-//   - resumable: results appended to verify-results.jsonl; --resume re-runs
-//     only accounts without a definitive verdict (safe to run over days)
+//   - resumable: results appended to verify-results.jsonl; a relaunch with the
+//     same command resumes where it left off (safe to run over days)
 //   - bandwidth guard on our own CDP-measured bytes (--max-mb); the webshare
 //     stats API lags, so it is only shown for information
 //
@@ -701,7 +701,7 @@ async function main() {
   const maxBytes = MAX_MB * 1048576;
   console.log(`accounts: ${ACCOUNTS.length} | to do: ${queue.length} | healthy IPs: ${healthyIPs.size} (sessions: ${sessions.length})`);
   console.log(`plan 24h usage: ${(planStart / 1048576).toFixed(1)} MB | CDP-measured budget: ${MAX_MB} MB/run (plan stats lag, so we guard on our own counter)`);
-  console.log(`results -> ${RESULTS} | resume-safe, run can be stopped and restarted with --resume`);
+  console.log(`results -> ${RESULTS} | resume-safe, run can be stopped and restarted with the same command`);
   const tStart = Date.now();
   const total = { bytes: 0, requests: 0 };
   const retryQueue = [];
@@ -760,7 +760,7 @@ async function main() {
     console.log(`  CDP-measured delta so far: ${(delta / 1048576).toFixed(1)} MB | plan 24h: ${(planUsageBytes() / 1048576).toFixed(1)} MB`);
     if (delta > maxBytes) {
       console.log(`\nBANDWIDTH GUARD: CDP-measured ${(delta / 1048576).toFixed(1)} MB > ${MAX_MB} MB — stopping cleanly.`);
-      console.log("re-run with --resume later (or raise --max-mb).");
+      console.log("re-run the same command later (or raise --max-mb).");
       stopped = true;
       break;
     }

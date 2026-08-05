@@ -31,6 +31,10 @@ are the resume data. Runtime state (`vc-healthy.json`, `vc-blocked.json`,
 - `check-proxies.mjs` — marks IPs blocked against the VC home page.
 - `login.mjs` / `scrape.mjs` — manual login + polite crawler helpers.
 - `build-pool.mjs` — rebuilds `user-agents.json` from `user-agents-gist.json`.
+- `clean-accounts.py` — one-shot cleaner: turns the raw `myaccount.txt` dump into
+  `accounts.json` (email → ordered password candidates). Fixes missing colons,
+  empty/placeholder/mojibake passwords, invalid emails, case-dedup. Never prints
+  credentials. Hardcoded source/output paths — run it on this machine only.
 
 ## Skills
 

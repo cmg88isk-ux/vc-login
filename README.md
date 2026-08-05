@@ -49,6 +49,7 @@ node build-pool.mjs          # rebuild user-agents.json from the gist dump
 node check-proxies.mjs       # mark IPs blocked against the VC home page
 node login.mjs               # manual login helper (env VC_EMAIL/VC_PASSWORD)
 node scrape.mjs <url>...     # polite crawler reusing a login session
+python3 clean-accounts.py    # one-shot: raw myaccount.txt -> accounts.json (see AGENTS.md)
 ```
 
 ## Anti-ban model (per AGENTS.md)
