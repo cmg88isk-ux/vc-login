@@ -48,7 +48,7 @@ import { seededDesktopUA, freshDesktopUA } from "./ua.js";
 
 // Portable paths: everything derives from the module location (repo root), so
 // the checker runs identically from any checkout. Override via env if needed.
-const DIR = process.env.VC_DIR || fileURLToPath(new URL(".", import.meta.url));
+const DIR = process.env.VC_DIR || fileURLToPath(new URL(".", import.meta.url)).replace(/\/$/, "");
 const ACCOUNTS = JSON.parse(readFileSync(`${DIR}/accounts.json`, "utf8"));
 const RESULTS = `${DIR}/verify-results.jsonl`;
 // valid.txt: keep the existing ../results location when present (this machine),
@@ -681,7 +681,6 @@ async function main() {
   console.log(`accounts: ${ACCOUNTS.length} | to do: ${queue.length} | healthy IPs: ${healthyIPs.size} (sessions: ${sessions.length})`);
   console.log(`plan 24h usage: ${(planStart / 1048576).toFixed(1)} MB | CDP-measured budget: ${MAX_MB} MB/run (plan stats lag, so we guard on our own counter)`);
   console.log(`results -> ${RESULTS} | resume-safe, run can be stopped and restarted with --resume`);
-
   const tStart = Date.now();
   const total = { bytes: 0, requests: 0 };
   const retryQueue = [];
