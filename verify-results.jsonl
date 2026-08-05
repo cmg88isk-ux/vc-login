@@ -1,0 +1,85 @@
+{"email":"razvancrismaru@yahoo.com","status":"BLOCKED","error":"cf-challenge-unresolved","ms":62271,"ts":"2026-08-05T13:03:21.198Z"}
+{"email":"falsonins@gmail.com","status":"ERROR","error":"page.evaluate: Target page, context or browser has been closed","ms":136981,"ts":"2026-08-05T13:04:35.908Z"}
+{"email":"razvancrismaru@yahoo.com","status":"FAILED","tried":1,"hints":["Log in\n\nIncorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in","Incorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in"],"api":200,"bytes":4855726,"requests":81,"ms":45391,"ts":"2026-08-05T13:44:49.687Z"}
+{"email":"falsonins@gmail.com","status":"RATE_LIMITED","hints":["Log in\n\nAccess to your account has been suspended.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in","Access to your account has been suspended.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in"],"api":200,"bytes":4849798,"requests":79,"ms":46095,"ts":"2026-08-05T13:45:42.329Z"}
+{"email":"plarstationey@tiscali.it","status":"NOT_REGISTERED","api":200,"bytes":2866664,"requests":58,"ms":11933,"ts":"2026-08-05T13:47:22.057Z"}
+{"email":"sales@baccinijacket.com","status":"RATE_LIMITED","hints":["Log in\n\nAccess to your account has been suspended.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in","Access to your account has been suspended.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in"],"api":200,"bytes":4852836,"requests":81,"ms":43598,"ts":"2026-08-05T13:48:10.089Z"}
+{"email":"georgiablueltd@btconnect.com","status":"NOT_REGISTERED","api":200,"bytes":4873805,"requests":83,"ms":8183,"ts":"2026-08-05T13:49:43.822Z"}
+{"email":"lazovaya.tatyana@gmail.com","status":"FAILED","tried":2,"hints":["Log in\n\nIncorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in","Incorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in"],"api":200,"bytes":4795257,"requests":81,"ms":85085,"ts":"2026-08-05T13:51:14.139Z"}
+{"email":"kijranus@gmail.com","status":"NOT_REGISTERED","api":200,"bytes":4852060,"requests":78,"ms":6080,"ts":"2026-08-05T13:51:26.730Z"}
+{"email":"magdakg7@gmail.com","status":"NOT_REGISTERED","api":200,"bytes":4378015,"requests":71,"ms":8399,"ts":"2026-08-05T13:51:44.103Z"}
+{"email":"stefanovic.hessaldinho@gmail.com","status":"FAILED","tried":2,"hints":["Log in\n\nIncorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in","Incorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in"],"api":200,"bytes":4850254,"requests":88,"ms":88742,"ts":"2026-08-05T13:53:18.212Z"}
+{"email":"stavroulatsi@icloud.com","status":"FAILED","tried":3,"hints":["Log in\n\nIncorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in","Incorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in"],"api":200,"bytes":4849780,"requests":80,"ms":128671,"ts":"2026-08-05T13:55:35.789Z"}
+{"email":"gendarmes2773@gmail.com","status":"NOT_REGISTERED","api":200,"bytes":4408469,"requests":69,"ms":9191,"ts":"2026-08-05T13:55:50.005Z"}
+{"email":"sniuhi-._ms@mail.com","status":"NOT_REGISTERED","api":200,"bytes":4491119,"requests":73,"ms":9632,"ts":"2026-08-05T13:56:08.089Z"}
+{"email":"storalite@gmail.com","status":"NOT_REGISTERED","api":200,"bytes":4412489,"requests":78,"ms":10068,"ts":"2026-08-05T13:56:25.971Z"}
+{"email":"finnrey@icloud.com","status":"FAILED","tried":1,"hints":["Log in\n\nIncorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in","Incorrect email or password.\n\nEmail\nPassword\nKeep me logged in\nForgot password ?\nLog in"],"api":200,"bytes":4849793,"requests":76,"ms":44516,"ts":"2026-08-05T13:57:17.982Z"}
+{"email":"sambalacas@gmail.com","status":"NOT_REGISTERED","api":200,"bytes":4936075,"requests":75,"ms":8995,"ts":"2026-08-05T13:57:31.494Z"}
+{"email":"falsonins@gmail.com","status":"SUSPENDED","hints":["Access to your account has been suspended."],"ip":"142.111.67.146","bytes":0,"requests":0,"ms":60945,"ts":"2026-08-05T14:16:06.917Z"}
+{"email":"falsonins@gmail.com","status":"SUSPENDED","hints":["Access to your account has been suspended."],"ip":"142.111.67.146","bytes":53389,"requests":45,"ms":60009,"ts":"2026-08-05T14:18:55.642Z"}
+{"email":"razvancrismaru@yahoo.com","status":"WAF","error":"no-password-step","ip":"191.96.254.138","bytes":71698,"requests":48,"ms":26932,"ts":"2026-08-05T14:20:56.180Z"}
+{"email":"falsonins@gmail.com","status":"WAF","error":"cf-challenge-unresolved","ip":"198.23.243.226","bytes":16740,"requests":5,"ms":62197,"ts":"2026-08-05T14:22:06.649Z"}
+{"email":"plarstationey@tiscali.it","status":"NOT_REGISTERED","ip":"198.105.121.200","bytes":541229,"requests":56,"ms":5540,"ts":"2026-08-05T14:22:20.341Z"}
+{"email":"sales@baccinijacket.com","status":"SUSPENDED","hints":["Access to your account has been suspended."],"ip":"198.105.121.200","bytes":268690,"requests":48,"ms":56628,"ts":"2026-08-05T14:23:26.391Z"}
+{"email":"georgiablueltd@btconnect.com","status":"WAF","error":"no-email-input","ip":"142.111.67.146","bytes":47414,"requests":32,"ms":7206,"ts":"2026-08-05T14:23:38.589Z"}
+{"email":"lazovaya.tatyana@gmail.com","status":"FAILED","tried":2,"hints":["Incorrect email or password."],"ip":"198.105.121.200","bytes":177492,"requests":50,"ms":111408,"ts":"2026-08-05T14:25:35.030Z"}
+{"email":"kijranus@gmail.com","status":"NOT_REGISTERED","ip":"198.105.121.200","bytes":209045,"requests":47,"ms":4516,"ts":"2026-08-05T14:25:48.814Z"}
+{"email":"magdakg7@gmail.com","status":"NOT_REGISTERED","ip":"198.105.121.200","bytes":462343,"requests":47,"ms":4351,"ts":"2026-08-05T14:26:01.479Z"}
+{"email":"stefanovic.hessaldinho@gmail.com","status":"FAILED","tried":2,"hints":["Incorrect email or password."],"ip":"198.105.121.200","bytes":505839,"requests":61,"ms":82084,"ts":"2026-08-05T14:27:28.290Z"}
+{"email":"stavroulatsi@icloud.com","status":"ERROR","error":"redirected-but-signin-visible","ip":"198.105.121.200","bytes":162958,"requests":53,"ms":148258,"ts":"2026-08-05T14:30:02.989Z"}
+{"email":"gendarmes2773@gmail.com","status":"BLOCKED","error":"page.goto: Target page, context or browser has been closed","ip":"198.105.121.200","bytes":0,"requests":0,"ms":283,"ts":"2026-08-05T14:30:09.359Z"}
+{"email":"afgungun5@gmail.com","status":"FAILED","tried":1,"ip":"142.111.67.146","bytes":60306,"requests":47,"ms":31457,"ts":"2026-08-05T14:37:09.433Z"}
+{"email":"stavimil@gmail.com","status":"WAF","error":"no-password-step","ip":"191.96.254.138","bytes":203747,"requests":47,"ms":26805,"ts":"2026-08-05T14:37:42.808Z"}
+{"email":"brehelin.ewen29@gmail.com","status":"FAILED","tried":1,"ip":"142.111.67.146","bytes":92054,"requests":48,"ms":28873,"ts":"2026-08-05T14:38:20.578Z"}
+{"email":"donna.nixon@btconnect.com","status":"FAILED","tried":1,"ip":"142.111.67.146","bytes":47648,"requests":48,"ms":28278,"ts":"2026-08-05T14:38:56.973Z"}
+{"email":"miguel.a.r.p11@gmail.com","status":"NOT_REGISTERED","ip":"142.111.67.146","bytes":209705,"requests":46,"ms":5761,"ts":"2026-08-05T14:39:10.520Z"}
+{"email":"pedrocarpionu@gmail.com","status":"WORKING","password":"EiloNiaLuan0301","ip":"31.56.127.193","bytes":401646,"requests":138,"ms":36924,"ts":"2026-08-05T14:39:56.581Z"}
+{"email":"etphonehome8@yahoo.com","status":"SUSPENDED","hints":["Access to your account has been suspended."],"ip":"31.56.127.193","bytes":314186,"requests":48,"ms":56224,"ts":"2026-08-05T14:41:00.477Z"}
+{"email":"lolachevrier@yahoo.es","status":"NOT_REGISTERED","ip":"31.56.127.193","bytes":239523,"requests":49,"ms":4395,"ts":"2026-08-05T14:41:12.074Z"}
+{"email":"andiking2208@gmail.com","status":"NOT_REGISTERED","ip":"31.56.127.193","bytes":476777,"requests":49,"ms":4853,"ts":"2026-08-05T14:41:23.541Z"}
+{"email":"michele@thepot.fr","status":"WAF","error":"no-email-input","ip":"142.111.67.146","bytes":188441,"requests":33,"ms":4952,"ts":"2026-08-05T14:41:37.239Z"}
+{"email":"laura.wiss@outlook.com","status":"NOT_REGISTERED","ip":"31.56.127.193","bytes":100702,"requests":49,"ms":5101,"ts":"2026-08-05T14:41:50.247Z"}
+{"email":"tjohos-1199nw@daum.net","status":"NOT_REGISTERED","ip":"31.56.127.193","bytes":102175,"requests":49,"ms":5192,"ts":"2026-08-05T14:42:02.431Z"}
+{"email":"kacper.ryl@op.pl","status":"NOT_REGISTERED","ip":"31.56.127.193","bytes":245948,"requests":59,"ms":5321,"ts":"2026-08-05T14:42:14.579Z"}
+{"email":"lamode@free.fr","status":"FAILED","tried":1,"hints":["Incorrect email or password."],"ip":"31.56.127.193","bytes":108739,"requests":50,"ms":57131,"ts":"2026-08-05T14:43:20.990Z"}
+{"email":"mia.mallegol@outlook.fr","status":"NOT_REGISTERED","ip":"31.56.127.193","bytes":92958,"requests":49,"ms":5217,"ts":"2026-08-05T14:43:33.940Z"}
+{"email":"utkuoto@aol.com","status":"ERROR","error":"locator.count: Target page, context or browser has been closed","ip":"31.56.127.193","bytes":344296,"requests":42,"ms":3847,"ts":"2026-08-05T14:43:46.062Z"}
+{"email":"stavimil@gmail.com","status":"FAILED","tried":4,"hints":["Incorrect email or password."],"ip":"31.56.127.193","bytes":111463,"requests":55,"ms":223268,"ts":"2026-08-05T14:53:41.403Z"}
+{"email":"michele@thepot.fr","status":"FAILED","tried":1,"hints":["Incorrect email or password."],"ip":"45.38.107.97","bytes":276400,"requests":48,"ms":28302,"ts":"2026-08-05T14:54:16.530Z"}
+{"email":"utkuoto@aol.com","status":"FAILED","tried":1,"hints":["Incorrect email or password."],"ip":"64.137.96.74","bytes":244622,"requests":48,"ms":57635,"ts":"2026-08-05T14:55:19.486Z"}
+{"email":"a.lmy@hotmail.com","status":"WAF","error":"no-password-step","ip":"198.23.243.226","bytes":108313,"requests":47,"ms":27373,"ts":"2026-08-05T14:55:55.041Z"}
+{"email":"marfuin@email.it","status":"NOT_REGISTERED","ip":"191.96.254.138","bytes":123667,"requests":47,"ms":7281,"ts":"2026-08-05T14:56:09.933Z"}
+{"email":"a.lmy@hotmail.com","status":"NOT_REGISTERED","ip":"31.56.127.193","bytes":155220,"requests":59,"ms":4752,"ts":"2026-08-05T14:56:42.815Z"}
+{"email":"noe_voudouris@yahoo.com","status":"FAILED","tried":1,"hints":["Incorrect email or password."],"ip":"31.56.127.193","bytes":181594,"requests":47,"ms":57872,"ts":"2026-08-05T14:58:20.755Z"}
+{"email":"matteobaldo23@gmail.com","status":"NOT_REGISTERED","ip":"45.38.107.97","bytes":285177,"requests":44,"ms":5401,"ts":"2026-08-05T14:58:32.384Z"}
+{"email":"iskendermejlissi@hotmail.com","status":"NOT_REGISTERED","ip":"64.137.96.74","bytes":280782,"requests":44,"ms":5308,"ts":"2026-08-05T14:58:44.123Z"}
+{"email":"nfievez65@gmail.com","status":"FAILED","tried":1,"ip":"142.111.67.146","bytes":74411,"requests":56,"ms":34898,"ts":"2026-08-05T14:59:25.428Z"}
+{"email":"nft_gaby_mihaescu@yahoo.it","status":"WAF","error":"cf-challenge-unresolved","ip":"191.96.254.138","bytes":17137,"requests":5,"ms":61900,"ts":"2026-08-05T15:00:36.315Z"}
+{"email":"phyothk@gmail.com","status":"FAILED","tried":3,"hints":["Incorrect email or password."],"ip":"31.56.127.193","bytes":210134,"requests":51,"ms":170949,"ts":"2026-08-05T15:05:33.548Z"}
+{"email":"annemarie.omt.calvi@wanadoo.fr","status":"FAILED","tried":1,"hints":["Incorrect email or password."],"ip":"45.38.107.97","bytes":254151,"requests":54,"ms":57535,"ts":"2026-08-05T15:06:35.937Z"}
+{"email":"jieheregnier@gmail.com","status":"FAILED","tried":2,"hints":["Incorrect email or password."],"ip":"64.137.96.74","bytes":217700,"requests":47,"ms":112976,"ts":"2026-08-05T15:08:34.835Z"}
+{"email":"williamcai382@gmail.com","status":"NOT_REGISTERED","ip":"142.111.67.146","bytes":39930,"requests":43,"ms":8917,"ts":"2026-08-05T15:08:51.656Z"}
+{"email":"villa-miranda@villa-miranda.es","status":"SUSPENDED","hints":["Access to your account has been suspended."],"ip":"31.56.127.193","bytes":180497,"requests":50,"ms":55711,"ts":"2026-08-05T15:09:56.173Z"}
+{"email":"collisg@dodo.com.au","status":"NOT_REGISTERED","ip":"45.38.107.97","bytes":252516,"requests":56,"ms":4193,"ts":"2026-08-05T15:10:07.784Z"}
+{"email":"zephyr636@gmail.com","status":"NOT_REGISTERED","ip":"64.137.96.74","bytes":181138,"requests":47,"ms":3913,"ts":"2026-08-05T15:10:16.993Z"}
+{"email":"kjs0826@gmail.com","status":"FAILED","tried":1,"ip":"142.111.67.146","bytes":49220,"requests":48,"ms":27712,"ts":"2026-08-05T15:10:52.279Z"}
+{"email":"laurynna971972@gmail.com","status":"NOT_REGISTERED","ip":"31.56.127.193","bytes":407982,"requests":58,"ms":5272,"ts":"2026-08-05T15:11:05.817Z"}
+{"email":"nvarsos@gmail.com","status":"FAILED","tried":1,"hints":["Incorrect email or password."],"ip":"45.38.107.97","bytes":179842,"requests":59,"ms":57188,"ts":"2026-08-05T15:12:09.511Z"}
+{"email":"fannycpub@gmail.com","status":"NOT_REGISTERED","ip":"64.137.96.74","bytes":455628,"requests":47,"ms":5004,"ts":"2026-08-05T15:12:21.687Z"}
+{"email":"davinzi@gmx.com","status":"WAF","error":"no-email-input","ip":"142.111.67.146","bytes":118780,"requests":36,"ms":4771,"ts":"2026-08-05T15:12:31.454Z"}
+{"email":"argo.maider@gmail.com","status":"FAILED","tried":2,"hints":["Incorrect email or password."],"ip":"64.137.96.74","bytes":218979,"requests":47,"ms":112392,"ts":"2026-08-05T15:16:07.694Z"}
+{"email":"farahsml@gmail.com","status":"NOT_REGISTERED","ip":"31.56.127.193","bytes":76368,"requests":52,"ms":5347,"ts":"2026-08-05T15:16:20.418Z"}
+{"email":"toripham1317@gmail.com","status":"FAILED","tried":1,"hints":["Incorrect email or password."],"ip":"45.38.107.97","bytes":281215,"requests":46,"ms":56124,"ts":"2026-08-05T15:17:25.803Z"}
+{"email":"paul_alexandrugk@yahoo.ro","status":"FAILED","tried":3,"hints":["Incorrect email or password."],"ip":"64.137.96.74","bytes":380443,"requests":52,"ms":168349,"ts":"2026-08-05T15:20:23.148Z"}
+{"email":"bigcoi4000@gmail.com","status":"WAF","error":"no-password-step","ip":"31.56.127.193","bytes":374267,"requests":48,"ms":24245,"ts":"2026-08-05T15:20:53.898Z"}
+{"email":"groucho26@gmail.com","status":"NOT_REGISTERED","ip":"64.137.96.74","bytes":440163,"requests":47,"ms":4658,"ts":"2026-08-05T15:21:04.453Z"}
+{"email":"ilariacanc13@gmail.com","status":"SUSPENDED","hints":["Access to your account has been suspended."],"ip":"45.38.107.97","bytes":322238,"requests":48,"ms":56412,"ts":"2026-08-05T15:22:10.427Z"}
+{"email":"dthais@gmail.com","status":"FAILED","tried":2,"hints":["Incorrect email or password."],"ip":"64.137.96.74","bytes":274073,"requests":50,"ms":111273,"ts":"2026-08-05T15:24:08.240Z"}
+{"email":"sales@emodaoutlet.com","status":"FAILED","tried":4,"hints":["Incorrect email or password."],"ip":"45.38.107.97","bytes":242029,"requests":51,"ms":225321,"ts":"2026-08-05T15:28:44.444Z"}
+{"email":"smile-eunbin@hotmail.com","status":"NOT_REGISTERED","ip":"64.137.96.74","bytes":298428,"requests":44,"ms":6018,"ts":"2026-08-05T15:28:59.977Z"}
+{"email":"davebarison@gmail.com","status":"NOT_REGISTERED","ip":"45.38.107.97","bytes":407380,"requests":47,"ms":4920,"ts":"2026-08-05T15:29:13.131Z"}
+{"email":"arianna.lizzi60@gmail.com","status":"NOT_REGISTERED","ip":"64.137.96.74","bytes":399830,"requests":47,"ms":4935,"ts":"2026-08-05T15:29:27.578Z"}
+{"email":"valkonskaya.n@gmail.com","status":"SUSPENDED","hints":["Access to your account has been suspended."],"ip":"45.38.107.97","bytes":466607,"requests":58,"ms":57114,"ts":"2026-08-05T15:30:29.869Z"}
+{"email":"ange.monvoisin@laposte.net","status":"NOT_REGISTERED","ip":"64.137.96.74","bytes":194796,"requests":47,"ms":5029,"ts":"2026-08-05T15:30:40.404Z"}
+{"email":"alberti.lara@alice.it","status":"SUSPENDED","hints":["Access to your account has been suspended."],"ip":"45.38.107.97","bytes":397325,"requests":48,"ms":56675,"ts":"2026-08-05T15:31:44.994Z"}
+{"email":"sarah.aouani@live.fr","status":"NOT_REGISTERED","ip":"64.137.96.74","bytes":202113,"requests":47,"ms":4686,"ts":"2026-08-05T15:31:54.517Z"}

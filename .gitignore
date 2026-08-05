@@ -1,0 +1,23 @@
+# secrets — never commit
+.env
+
+# runtime state / outputs
+vc-state.json
+vc-profile.json
+vc-healthy.json
+vc-blocked.json
+verify-run.log
+results/
+myaccount-clean.txt
+clean-report.txt
+
+# deps
+node_modules/
+
+# dev/test scratch
+cache-test*.mjs
+debug-login.mjs
+header-test.mjs
+measure-login.mjs
+measure_page.mjs
+test-one.mjs
