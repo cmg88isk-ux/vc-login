@@ -63,7 +63,11 @@ const PROFILE_ROOT = process.env.VC_PROFILE_ROOT || "/tmp/opencode/vc-profiles";
 const MAX_RETRIES = 3;
 const IP_COOL_MS = 10 * 60 * 1000;
 const MAX_DEMERITS = 4;
-const RECONCILE_EVERY = 25;
+const RECONCILE_EVERY = 10;
+// Recovery probing: up to 4 blocked IPs per reconcile, but never re-probe an
+// IP within 5 min of its last attempt (avoids hammering still-flagged IPs).
+const RECOVER_PROBE_MAX = 4;
+const RECOVER_INTERVAL_MS = 5 * 60 * 1000;
 
 // One persistent profile (disk cache) per IP. dropProfile purges it so a
 // dropped / permanently-flagged IP's cache is never reused later.
@@ -166,15 +170,22 @@ function pickSession(email) {
   return s;
 }
 
-async function waitForSession() {
+async function waitForSession(probeBrowser) {
   while (true) {
+    if (activeSessions().length) break;
+    // No active session: before idling, try to recover blocked IPs. Cheap —
+    // reconcile respects the per-IP re-probe interval, so this can't hammer.
+    await reconcile(probeBrowser).catch(() => {});
     if (activeSessions().length) break;
     const cooling = sessions.filter((s) => s.coolUntil && s.coolUntil > Date.now());
     if (cooling.length) {
       const next = Math.min(...cooling.map((s) => s.coolUntil));
       const ms = Math.max(0, next - Date.now());
-      console.log(`  all sessions cooling — waiting ${Math.ceil(ms / 1000)}s`);
-      await sleep(ms);
+      // Cap the wait so recovery is retried periodically instead of idling
+      // through the whole cooldown with a shrunk pool.
+      const chunk = Math.min(ms, 30000);
+      console.log(`  all sessions cooling — waiting ${Math.ceil(ms / 1000)}s (re-probing blocked IPs meanwhile)`);
+      await sleep(chunk);
       continue;
     }
     // no session at all -> caller must reconcile (relaunch/probe IPs)
@@ -260,6 +271,8 @@ async function probeAll(probeBrowser) {
 
 // Round-robin cursor so repeated reconciles eventually probe every blocked IP.
 let recoverCursor = 0;
+// Last time each blocked IP was re-probed (avoid hammering still-flagged IPs).
+const lastRecover = new Map();
 
 async function reconcile(probeBrowser) {
   const current = listProxies();
@@ -298,13 +311,21 @@ async function reconcile(probeBrowser) {
       await sleep(1200);
     }
   }
-  // re-probe a couple of blocked IPs (no session) for recovery, round-robin.
-  // WAF flags datacenter IPs for a while then lets them through again.
+  // Re-probe blocked IPs (no session) for recovery, round-robin but respecting
+  // a minimum interval per IP. WAF flags datacenter IPs for a while then lets
+  // them through again, so keeping the pool topped up matters more than the
+  // probe cost. Probing up to RECOVER_PROBE_MAX per reconcile, oldest-tried
+  // first.
   const blockedNoSession = [...blockedIPs].filter((ip) => !sessions.some((s) => s.ip === ip));
-  const nProbe = Math.min(2, blockedNoSession.length);
+  const now = Date.now();
+  const candidates = blockedNoSession
+    .filter((ip) => !lastRecover.has(ip) || now - lastRecover.get(ip) >= RECOVER_INTERVAL_MS)
+    .sort((a, b) => (lastRecover.get(a) || 0) - (lastRecover.get(b) || 0));
+  const nProbe = Math.min(RECOVER_PROBE_MAX, candidates.length);
   for (let k = 0; k < nProbe; k++) {
-    const ip = blockedNoSession[recoverCursor % blockedNoSession.length];
+    const ip = candidates[recoverCursor % candidates.length];
     recoverCursor++;
+    lastRecover.set(ip, now);
     const entry = current.find((p) => p.proxy_address === ip);
     if (!entry) continue;
     const r = await probeLoginIp(probeBrowser, entry);
@@ -714,7 +735,7 @@ async function main() {
   for (let i = 0; i < queue.length; i++) {
     if (stopped) break;
     const account = queue[i];
-    if (!(await waitForSession())) {
+    if (!(await waitForSession(probeBrowser))) {
       await reconcile(probeBrowser);
       if (!activeSessions().length) {
         console.error("no usable session after reconcile — aborting this run (re-run later).");
@@ -752,7 +773,7 @@ async function main() {
     const next = retryQueue.splice(0);
     for (const { account } of next) {
       if (stopped) break;
-      if (!(await waitForSession())) {
+      if (!(await waitForSession(probeBrowser))) {
         await reconcile(probeBrowser);
         if (!activeSessions().length) { console.error("no usable session during retry — aborting."); stopped = true; break; }
       }
