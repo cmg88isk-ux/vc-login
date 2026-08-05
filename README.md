@@ -75,11 +75,16 @@ the results file (definitive OR transient) is skipped on relaunch; `--all` or
 `--account <email>` force an explicit re-check. `--final` writes
 `myaccount-verified.txt` and the per-status `accounts-*.txt` lists.
 
-## Skills (bundled in skills/)
+## Skills
 
+Bundled twice so they are usable in every context:
+
+- `skills/` — plain copy for manual use / copying to other machines.
+- `.opencode/skills/` — auto-loaded by opencode (`opencode.json` declares
+  `skills.paths: [".opencode/skills"]`). Reinstall on a new machine with:
+  `npx skills add <repo> --skill <name> -g -a codex -y --copy`
+
+Available:
 - `vibe-check` — browser verification layer (navigate/map/click/fill, screenshots, storage-state).
 - `playwright-skill` — Playwright E2E generator (local + TestMu cloud).
 - `systematic-debugging` — root-cause-before-fix methodology.
-
-Reinstall on a new machine with:
-`npx skills add <repo> --skill <name> -g -a codex -y --copy`

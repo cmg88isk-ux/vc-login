@@ -31,8 +31,15 @@ are the resume data. Runtime state (`vc-healthy.json`, `vc-blocked.json`,
 - `login.mjs` / `scrape.mjs` — manual login + polite crawler helpers.
 - `build-pool.mjs` — rebuilds `user-agents.json` from `user-agents-gist.json`.
 
-## Skills (bundled in skills/)
+## Skills
 
+Bundled twice so they are usable in every context:
+
+- `skills/` — plain copy for manual use / copying to other machines.
+- `.opencode/skills/` — auto-loaded by opencode (`opencode.json` declares
+  `skills.paths: [".opencode/skills"]`).
+
+Available:
 - `vibe-check` — browser verification layer (navigate/map/click/fill, screenshots, storage-state persist/restore).
 - `playwright-skill` — Playwright E2E generator (local + TestMu cloud).
 - `systematic-debugging` — root-cause before fix.
