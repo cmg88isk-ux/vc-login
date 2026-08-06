@@ -729,3 +729,5 @@
 {"email":"sonia.bitan@laposte.net","status":"NOT_REGISTERED","ip":"142.111.67.146","bytes":102271,"requests":45,"ms":9285,"ts":"2026-08-06T02:16:04.926Z"}
 {"email":"gendarmes1973@gmail.com","status":"FAILED","tried":2,"hints":["Incorrect email or password."],"ip":"191.96.254.138","bytes":86952,"requests":51,"ms":113599,"ts":"2026-08-06T02:18:04.474Z"}
 {"email":"luis_sherry_12@yahoo.com","status":"WORKING","password":"vestiaire59","ip":"84.247.60.125","bytes":756343,"requests":136,"ms":36535,"ts":"2026-08-06T02:18:47.930Z"}
+{"email":"pinel-kevin@hotmail.fr","status":"NOT_REGISTERED","ip":"142.111.67.146","bytes":138443,"requests":43,"ms":5822,"ts":"2026-08-06T02:19:02.505Z"}
+{"email":"ql16177@essex.ac.uk","status":"NOT_REGISTERED","ip":"191.96.254.138","bytes":193600,"requests":48,"ms":5419,"ts":"2026-08-06T02:19:13.794Z"}

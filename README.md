@@ -34,6 +34,10 @@ when that dir exists next to the checkout (this machine), else a repo-local
 nohup node verify-accounts.mjs --max-mb 300 > verify-run.log 2>&1 &
 tail -f verify-run.log
 
+# 24/7 operation — auto-relaunch after each bandwidth-guard stop; waits for the
+# pool to recover (probes probe-login-ips.mjs every 5 min) when all IPs are down
+nohup ./run-24h.sh > run-24h.log 2>&1 &
+
 # resume after a stop / bandwidth guard (same command; skips already-verdict'd)
 node verify-accounts.mjs --max-mb 300
 
